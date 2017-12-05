@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".lifecycle.LifeCycleActivity">
         </activity>
+        <activity android:name=".livedata.LiveDataActivity">
+        </activity>
     </application>
 
 </manifest>

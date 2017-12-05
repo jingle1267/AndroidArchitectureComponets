@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ihognqiqu.aac.MainActivity">
+    tools:context="com.ihognqiqu.aac.livedata.LiveDataActivity">
 
     <TextView
+        android:id="@+id/tv_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textSize="20dp"
         android:gravity="center"
-        android:padding="15dp"
-        android:text="各组件DEMO入口"
-        />
+        android:text="Default User Name" />
 
     <Button
+        android:id="@+id/tv_change_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="LifeCycle"
-        android:onClick="onClickLifeCycle"
-        />
+        android:onClick="onClickMainThread"
+        android:text="Change User Name main thread" />
 
     <Button
+        android:id="@+id/tv_change_username_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="LiveData"
-        android:onClick="onClickLiveData"
-        />
-
+        android:onClick="onClickThread"
+        android:text="Change User Name background" />
 </LinearLayout>
