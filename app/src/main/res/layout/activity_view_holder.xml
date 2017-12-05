@@ -5,41 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ihognqiqu.aac.livedata.LiveDataActivity">
+    tools:context="com.ihognqiqu.aac.viewmodel.ViewHolderActivity">
+
 
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:gravity="center"
-        android:padding="40dp"
-        android:text="Default User Name"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/tv_change_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:onClick="onClickMainThread"
-        android:text="Change User Name main thread" />
-
-    <Button
-        android:id="@+id/tv_change_username_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:onClick="onClickThread"
-        android:text="Change User Name background" />
+        android:text="default username" />
 
     <TextView
+        android:id="@+id/tv_address"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="default address" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Get User Info" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:text="一个数据持有类，持有数据并且这个数据可以被观察被监听，和其他Observer不同的是，它和Lifecycle是绑定的。"
+        android:text="用于实现架构中的ViewModel，同时是与Lifecycle绑定的，使用者无需担心生命周期。方便在多个Fragment之前分享数据，比如旋转屏幕后Activity会重新create，这时候使用ViewModel可以方便使用之前的数据，不需要再次请求网络数据。"
         android:textColor="@color/colorPrimary"
-        android:textSize="17dp" />
-
-
+        android:textSize="16sp" />
 </LinearLayout>
