@@ -11,7 +11,7 @@ import android.util.Log;
  * <p>
  * Created by zhenguo on 12/5/17.
  */
-public class LifeCycleListener implements LifecycleObserver {
+public class LocationListener implements LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     public void start() {

@@ -11,6 +11,6 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
 
-        getLifecycle().addObserver(new LifeCycleListener());
+        getLifecycle().addObserver(new LocationListener());
     }
 }
